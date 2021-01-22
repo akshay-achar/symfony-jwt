@@ -156,7 +156,7 @@ class TodoService
             $responseData['message'] = $exception->getMessage();
             $this->logger->log('error', $exception->getMessage(), ['exception' => $exception]);
         }
-        
+
         return $responseData;
     }
 }
